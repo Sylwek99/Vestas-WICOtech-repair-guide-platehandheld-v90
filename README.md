@@ -19,5 +19,5 @@ teraz jak to uruchomić
 w gorne pole sciezki C:\Users\xxx\Desktop\Vestas usun to i wpisz Cmd 
 <img width="1223" height="482" alt="Zrzut ekranu (46)" src="https://github.com/user-attachments/assets/ca87047b-be46-4aab-9dc4-2afd52a9591c" />
 
-wyswietli ci sie panel nastepnie wpisz tam : python wgraj.py i wcisnij  ender 
+wyswietli ci sie konsola CMD nastepnie wpisz tam : python wgraj.py i wcisnij  enter 
 
