@@ -9,5 +9,6 @@ to prawdo podobnie uległ uszkodzeniu pamięc programu
 jak widzisz musiałem usunąc adrey pamieci żęby latwiej się wgrało za pomoca python  
 wsad pochodzi od sprawnego panela 
 zebys mugł to wgrac (zrzut) potrzebujesz arduino mega 2560 mega i wgranego programu do niego pod tytułem (kod pośredni do arduino mega 2560)  
-<img width="1920" height="1080" alt="Zrzut ekranu (45)" src="https://github.com/user-attachments/assets/7f6728a8-da6d-49cd-9582-751d4afbe396" />
+<img width="980" height="876" alt="Zrzut ekranu (45)" src="https://github.com/user-attachments/assets/51c3b7c7-1393-4c4d-80a5-d73ab3692bb8" />
+
 
