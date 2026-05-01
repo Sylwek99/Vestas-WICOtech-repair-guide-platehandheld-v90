@@ -1,0 +1,48 @@
+import serial
+import time
+
+# === USTAWIENIA ===
+COM_PORT = 'COM7'          # zmień jeśli masz inny port
+BAUD = 115200
+
+ser = serial.Serial(COM_PORT, BAUD, timeout=5)
+time.sleep(3)  # czekamy na reset Arduino
+
+print("Czekam na sygnał READY...")
+while True:
+    line = ser.readline().decode(errors='ignore').strip()
+    if "READY" in line:
+        print("Arduino gotowe!")
+        break
+
+print("Wgrywanie...")
+
+# === NOWY PARSING – czyta plik bez ":" ===
+dane = []
+with open('zrzut.txt', 'r', encoding='utf-8') as f:
+    for line_num, line in enumerate(f, 1):
+        line = line.strip()
+        if not line:
+            continue
+        for hex_str in line.split():
+            try:
+                bajt = int(hex_str, 16)
+                if 0 <= bajt <= 255:
+                    dane.append(bajt)
+                else:
+                    print(f"Linia {line_num}: Nieprawidłowy bajt {hex_str}")
+            except ValueError:
+                print(f"Linia {line_num}: Pomijam nie-hex '{hex_str}'")
+
+total = len(dane)
+print(f"Załadowano {total} bajtów (powinno być dokładnie 8192)")
+
+# === WYSYŁANIE BAJT PO BAJCIE Z ACK ===
+for i, bajt in enumerate(dane):
+    ser.write(bytes([bajt]))
+    
+    ack = ser.read(1)                    # czekamy na 'A' od Arduino
+    if not ack or ack[0] != ord('A'):
+        print(f"\nBŁĄD ZAPISU przy bajcie {i} (Adres: {hex(i)})")
+        print(f"Otrzymano: {ack}")
+        break
