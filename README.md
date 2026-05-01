@@ -7,3 +7,4 @@ to prawdo podobnie uległ uszkodzeniu pamięc programu
 <img width="1320" height="1031" alt="Zrzut ekranu (43)" src="https://github.com/user-attachments/assets/da784b0c-ca59-480c-ba5a-abf85b5c28ed" />
 jak widzisz musiałem usunąc adrey pamieci żęby latwiej się wgrało za pomoca python  
 wsad pochodzi od sprawnego panela 
+zebys mugł to wgrac potrzebujesz arduino mega 2560 mega i wgranego programu do niego posredniczacego ktory pomoze wgrać nasz głowny zrzut 
