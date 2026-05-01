@@ -1,4 +1,4 @@
-<img width="1223" height="482" alt="Zrzut ekranu (46)" src="https://github.com/user-attachments/assets/025e96df-3363-422d-a181-e84332448409" />
+
 
 # Vestas-WICOtech-repair-guide-platehandheld-v90
 Instrukcja naprawy panelu ręcznego do turbiny Vestas (wicotech)
