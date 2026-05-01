@@ -1,3 +1,4 @@
+<img width="1223" height="482" alt="Zrzut ekranu (46)" src="https://github.com/user-attachments/assets/025e96df-3363-422d-a181-e84332448409" />
 
 # Vestas-WICOtech-repair-guide-platehandheld-v90
 Instrukcja naprawy panelu ręcznego do turbiny Vestas (wicotech)
@@ -16,5 +17,7 @@ nastepnie w tym samym folderze otwurz nastepny notatnik i skopiuj kod (program p
 teraz jak to uruchomić  
 1 otworz folder Vestas
 w gorne pole sciezki C:\Users\xxx\Desktop\Vestas usun to i wpisz Cmd 
+<img width="1223" height="482" alt="Zrzut ekranu (46)" src="https://github.com/user-attachments/assets/ca87047b-be46-4aab-9dc4-2afd52a9591c" />
+
 wyswietli ci sie panel nastepnie wpisz tam : python wgraj.py i wcisnij  ender 
 
