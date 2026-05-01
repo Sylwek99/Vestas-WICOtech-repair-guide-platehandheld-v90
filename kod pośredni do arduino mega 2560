@@ -1,0 +1,95 @@
+#define WE 43
+#define OE 44
+#define CE 45
+
+int addrPins[13] = {22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34};
+int dataPins[8] = {35, 36, 37, 38, 39, 40, 41, 42};
+
+void setAddress(unsigned int addr) {
+  for(int i=0; i<13; i++) {
+    digitalWrite(addrPins[i], (addr >> i) & 1);
+  }
+}
+
+void setData(byte data) {
+  for(int i=0; i<8; i++) {
+    pinMode(dataPins[i], OUTPUT);
+    digitalWrite(dataPins[i], (data >> i) & 1);
+  }
+}
+
+byte readData() {
+  byte data = 0;
+  for(int i=0; i<8; i++) {
+    pinMode(dataPins[i], INPUT);
+    if(digitalRead(dataPins[i])) data |= (1 << i);
+  }
+  return data;
+}
+
+void writeByte(unsigned int addr, byte data) {
+  setAddress(addr);
+  setData(data);
+  digitalWrite(CE, LOW);
+  digitalWrite(WE, LOW);
+  delayMicroseconds(1);
+  digitalWrite(WE, HIGH);
+  digitalWrite(CE, HIGH);
+  delay(12); // Czas na wewnętrzny cykl zapisu AT28C64
+}
+
+byte readByte(unsigned int addr) {
+  setAddress(addr);
+  for(int i=0; i<8; i++) pinMode(dataPins[i], INPUT);
+  digitalWrite(CE, LOW);
+  digitalWrite(OE, LOW);
+  delayMicroseconds(1);
+  byte data = readData();
+  digitalWrite(OE, HIGH);
+  digitalWrite(CE, HIGH);
+  return data;
+}
+
+void setup() {
+  Serial.begin(115200);
+
+  // KONFIGURACJA PINÓW STERUJĄCYCH
+  pinMode(WE, OUTPUT); digitalWrite(WE, HIGH);
+  pinMode(OE, OUTPUT); digitalWrite(OE, HIGH);
+  pinMode(CE, OUTPUT); digitalWrite(CE, HIGH);
+
+  // KONFIGURACJA PINÓW ADRESOWYCH
+  for(int i=0; i<13; i++) {
+    pinMode(addrPins[i], OUTPUT);
+    digitalWrite(addrPins[i], LOW);
+  }
+
+  // KONFIGURACJA PINÓW DANYCH (domyślnie wejścia)
+  for(int i=0; i<8; i++) {
+    pinMode(dataPins[i], INPUT);
+  }
+
+  delay(2000);
+  Serial.println("READY"); 
+}
+
+void loop() {
+  static unsigned int addr = 0;
+  
+  if (addr < 8192 && Serial.available() > 0) {
+    byte data = Serial.read();
+    writeByte(addr, data);
+    
+    // Weryfikacja i wysłanie potwierdzenia do Pythona
+    if(readByte(addr) == data) {
+      Serial.print('A'); // A = ACK (OK)
+    } else {
+      Serial.print('E'); // E = ERROR
+    }
+    
+    addr++;
+    if(addr == 8192) {
+      Serial.println("\nDONE");
+    }
+  }
+}
