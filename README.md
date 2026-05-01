@@ -10,5 +10,6 @@ jak widzisz musiałem usunąc adrey pamieci żęby latwiej się wgrało za pomoc
 wsad pochodzi od sprawnego panela 
 zebys mugł to wgrac (zrzut) potrzebujesz arduino mega 2560 mega i wgranego programu do niego pod tytułem (kod pośredni do arduino mega 2560)  
 <img width="980" height="876" alt="Zrzut ekranu (45)" src="https://github.com/user-attachments/assets/51c3b7c7-1393-4c4d-80a5-d73ab3692bb8" />
-
+teraz utwórz nowy folder na pulbice otworz notatnik i wklej zrzut zapisz go pod tytułem zrzut 
+nastepnie w tym samym folderze otwurz nastepny notatnik i skopiuj kod (program python) i zapiz go 
 
