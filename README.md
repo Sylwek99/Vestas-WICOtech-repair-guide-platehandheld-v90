@@ -20,8 +20,9 @@ jesli mimo odczytoów jednym po drugim programy się rózni to znaczy że kosc l
 udało mi się wgrać program do uszkodzonego modułu i działa 
 
 żeby to naprawić wgramy nowy program. z mojego notatnika tod tytułem (zrzut) pochodzi ten plik z drugiego sprawnego panelu 
-tutaj znajduje się link do dysku google gdzie udostępniam program gdyby nie udało się go pobrać z githuda  
-https://drive.google.com/file/d/18X0I5xaTa8nLGgV4QTl_boRgWtKYvbES/view?usp=drive_link
+pobierzez go z zrut.zip
+
+
 
 <img width="1320" height="1031" alt="Zrzut ekranu (43)" src="https://github.com/user-attachments/assets/da784b0c-ca59-480c-ba5a-abf85b5c28ed" />
 jak widzisz musiałem usunąc adrey pamieci żęby latwiej się wgrało za pomoca python  
