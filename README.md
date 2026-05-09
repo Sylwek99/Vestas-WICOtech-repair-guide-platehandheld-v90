@@ -39,4 +39,6 @@ w gorne pole sciezki C:\Users\xxx\Desktop\Vestas usun to i wpisz Cmd
 
 wyswietli ci sie konsola CMD nastepnie wpisz tam : python wgraj.py i wcisnij  enter 
 
+pin aut do wgrania kodu 
+
 
