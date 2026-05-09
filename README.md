@@ -6,6 +6,14 @@ jeli pojawia się taki komunikat na panelu
 <img width="590" height="442" alt="IMG_8506" src="https://github.com/user-attachments/assets/59217448-f37f-4fca-847d-70f98180f155" />
 to prawdo podobnie uległ uszkodzeniu pamięc programu 
 <img width="366" height="488" alt="Zrzut ekranu (47)" src="https://github.com/user-attachments/assets/173b0164-9139-419d-943e-89793b72c9c9" />
+na początek odczytałem pamięc tego układu za pomoca arduino mega 2560 
+program jest pod tytułem ..... wgraj go i podłacz pin aut 
+<img width="388" height="602" alt="Zrzut ekranu (51)" src="https://github.com/user-attachments/assets/72d6cfb0-59dc-4f9b-8900-bf18b4d11ce8" />
+<img width="399" height="453" alt="Zrzut ekranu (50)" src="https://github.com/user-attachments/assets/2449db5c-c94c-4f1f-b637-ffa1f82aadae" />
+<img width="405" height="316" alt="Zrzut ekranu (49)" src="https://github.com/user-attachments/assets/9ca10075-9bfc-4add-9db9-530360a3be35" />
+<img width="399" height="555" alt="Zrzut ekranu (52)" src="https://github.com/user-attachments/assets/0bf651e6-6d40-49f7-91a5-4d0d9d014c9c" />
+
+
 żeby to naprawić wgraj nowy program. z mojego notatnika tod tytułem (zrzut)
 <img width="1320" height="1031" alt="Zrzut ekranu (43)" src="https://github.com/user-attachments/assets/da784b0c-ca59-480c-ba5a-abf85b5c28ed" />
 jak widzisz musiałem usunąc adrey pamieci żęby latwiej się wgrało za pomoca python  
