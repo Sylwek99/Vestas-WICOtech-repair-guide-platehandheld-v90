@@ -22,6 +22,7 @@ udało mi się wgrać program do uszkodzonego modułu i działa
 żeby to naprawić wgramy nowy program. z mojego notatnika tod tytułem (zrzut) pochodzi ten plik z drugiego sprawnego panelu 
 
 02 1F 62 08 06 B6 00 02 18 06 22 02 1E FC EF 2F 
+
 50 02 05 83 25 82 F5 82 E5 83 3E 2E F5 83 22 FF 
 FF FF FF 02 1F 17 C2 98 D2 AC D2 A9 C2 8D D2 8C 
 D2 AF 22 75 98 70 75 8D FA 75 8B FA 75 89 21 75 
