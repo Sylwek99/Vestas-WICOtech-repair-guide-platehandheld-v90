@@ -19,7 +19,7 @@ nastepnie pobierz program z internetu do porównywania takich danych np ,,,HxD,,
 jesli mimo odczytoów jednym po drugim programy się rózni to znaczy że kosc lub program jest uszkodzony ale w moim przypadku 
 udało mi się wgrać program do uszkodzonego modułu i działa 
 
-żeby to naprawić wgraj nowy program. z mojego notatnika tod tytułem (zrzut)
+żeby to naprawić wgramy nowy program. z mojego notatnika tod tytułem (zrzut) pochodzi ten plik z drugiego sprawnego panelu 
 <img width="1320" height="1031" alt="Zrzut ekranu (43)" src="https://github.com/user-attachments/assets/da784b0c-ca59-480c-ba5a-abf85b5c28ed" />
 jak widzisz musiałem usunąc adrey pamieci żęby latwiej się wgrało za pomoca python  
 wsad pochodzi od sprawnego panela 
