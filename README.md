@@ -6,7 +6,6 @@ jeli pojawia się taki komunikat na panelu
 <img width="590" height="442" alt="IMG_8506" src="https://github.com/user-attachments/assets/59217448-f37f-4fca-847d-70f98180f155" />
 to prawdo podobnie uległ uszkodzeniu pamięc programu 
 <img width="366" height="488" alt="Zrzut ekranu (47)" src="https://github.com/user-attachments/assets/173b0164-9139-419d-943e-89793b72c9c9" />
-
 żeby to naprawić wgraj nowy program. z mojego notatnika tod tytułem (zrzut)
 <img width="1320" height="1031" alt="Zrzut ekranu (43)" src="https://github.com/user-attachments/assets/da784b0c-ca59-480c-ba5a-abf85b5c28ed" />
 jak widzisz musiałem usunąc adrey pamieci żęby latwiej się wgrało za pomoca python  
@@ -22,4 +21,5 @@ w gorne pole sciezki C:\Users\xxx\Desktop\Vestas usun to i wpisz Cmd
 <img width="1223" height="482" alt="Zrzut ekranu (46)" src="https://github.com/user-attachments/assets/ca87047b-be46-4aab-9dc4-2afd52a9591c" />
 
 wyswietli ci sie konsola CMD nastepnie wpisz tam : python wgraj.py i wcisnij  enter 
+
 
